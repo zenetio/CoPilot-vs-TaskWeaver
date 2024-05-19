@@ -1,0 +1,1 @@
+In time_data you need append the field 2 that is already in seconds and can be stored as float. Regarding the X-axis, you still need to review the code to make sure the X values are plotted in the format of '%H:%M:%S' and make sure the values does not overlap.

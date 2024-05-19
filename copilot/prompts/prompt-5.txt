@@ -1,0 +1,3 @@
+Me: The error was fixed but still need to plot the X values in the '%H:%M:%S' format
+
+CoPilot: To plot the X values in the '%H:%M:%S' format, we can convert the seconds back to time format for plotting. Here is the revised code:

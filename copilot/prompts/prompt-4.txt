@@ -1,0 +1,4 @@
+Me: I am getting the error regarding to plot() function TypeError: float() argument must be a string or a real number, not 'datetime.time'
+
+CoPilot: The error is due to the fact that matplotlib.pyplot.plot() function does not accept datetime.time objects. We can convert the time data to a format that matplotlib.pyplot.plot() can handle.
+One way to do this is to convert the time data to seconds since the start of the day. Here is the revised code:

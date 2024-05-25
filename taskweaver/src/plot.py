@@ -3,6 +3,9 @@ import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
+# Define a date parser
+date_parser = lambda x: pd.datetime.strptime(x, '%H:%M:%S %d/%m/%y')
+
 # Open the file located at "H:\\Projects\\TaskWeaver\\project\\sample_data\\dataset.csv"
 with open("H:\\Projects\\TaskWeaver\\project\\sample_data\\dataset.csv", "r") as f:
     # Load the file using the csv reader function

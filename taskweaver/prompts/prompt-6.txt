@@ -1,0 +1,13 @@
+Create a Python code that includes the steps below, where the script will do the following:
+
+- the script will open the file located at "H:\\Projects\\TaskWeaver\\project\\sample_data\\dataset.csv"
+- load the file using the csv reader function
+- the first line is the title of columns
+- save the created script in a file named 'plot.py'
+- the dataset.csv file is time-series dataset with a csv format that has 4 columns: TIMESTAMP,TIME,RAW,CURRENT
+- the RAW column will will not be used.
+- the TIMESTAMP is in the format '%H:%M:%S %d/%m/%y', TIME in seconds, and the CURRENT is float
+- using TIMESTAMP as index, read data in the range between "12:16:09 17/05/24" and "14:54:12 17/05/24"
+- plot the graphic of the CURRENT
+- show the x-axis and y-axis string labels in the graphic, or 'Time' and 'Current (A)', respectively.
+- make sure the x-axis follow the '%H:%M:%S' format

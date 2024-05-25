@@ -1,0 +1,13 @@
+Create a Python code that includes the steps below, where the script will do the following:
+
+- the script will open the dataset.txt file
+- name of script file to create: plot.py
+- the dataset.txt file has a dataset in time-series format
+- the dataset.txt file is a csv file with 4 fields: timestamp, time (in seconds), raw current (A), current (A)
+- the script will use the fields: 1, 2 (if necessary), and 4
+- use the command line to accept two arguments to define the data range: "initial data", "final data"
+- the script will read data with the mentioned fields starting at "initial data" until the "final data"
+- plot the current vs time. Plot the current in y-axis and time in x-axis.
+- using the read data, plot the graphic of current vs time, where the idea is to see how the current vary with the time
+- write X and Y labels, where X = Time (S) and Y = Current (A)
+- make sure the x-axis follow the '%H:%M:%S' format

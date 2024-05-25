@@ -1,0 +1,15 @@
+Create a Python code that includes the steps below, where the script will do the following:
+
+- the script will open the file located at "H:\\Projects\\TaskWeaver\\project\\sample_data\\dataset.csv"
+- the first line is the title of columns
+- save the created script in a file named 'plot.py'
+- the dataset.csv file is time-series dataset with a csv format that has 4 columns: TIMESTAMP,TIME,RAW,CURRENT
+- we will use only the first and last fields, or TIMESTAMP and CURRENT, respectively.
+- the TIMESTAMP variable is in the format '%H:%M:%S %d/%m/%y' and the CURRENT variable is the current in amperes (A)
+- use the command line to accept two arguments in the format '%H:%M:%S %d/%m/%y', to define the data range: "initial data", "final data"
+- the script will read the data range of interest, using the fields starting at "initial data" until the "final data"
+- to create the plot, use the range "12:16:09 17/05/24", "14:54:12 17/05/24"
+- plot the current vs time, considering the current in y-axis and time in x-axis.
+- using the read data, plot the graphic of current vs time, where the idea is to see the behavior of the current over time.
+- show the x-axis and y-axis string labels in the graphic, or 'Time' and 'Current (A)', respectively.
+- make sure the x-axis follow the '%H:%M:%S' format

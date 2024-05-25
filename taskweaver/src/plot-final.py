@@ -1,15 +1,17 @@
 import pandas as pd
 import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+import datetime
+
+matplotlib.use('TkAgg')
 
 # Define a date parser
-date_parser = lambda x: pd.datetime.strptime(x, '%H:%M:%S %d/%m/%y')
+date_parser = lambda x: datetime.datetime.strptime(x, '%H:%M:%S %d/%m/%y')
 
 # Open the file located at "H:\\Projects\\TaskWeaver\\project\\sample_data\\dataset.csv"
 with open("H:\\Projects\\TaskWeaver\\project\\sample_data\\dataset.csv", "r") as f:
     # Load the file using the csv reader function
-    df = pd.read_csv(f)
+    df = pd.read_csv(f, parse_dates=['TIMESTAMP'], date_parser=date_parser)
 
 # Save the created script in a file named 'plot.py'
 with open("plot.py", "w") as f:
@@ -20,8 +22,6 @@ with open("plot.py", "w") as f:
 # The TIMESTAMP is in the format '%H:%M:%S %d/%m/%y', TIME in seconds, and the CURRENT is float
 df = df.set_index("TIMESTAMP")
 df = df.drop("RAW", axis=1)
-#df = df.astype({"TIME": "time", "CURRENT": "float"})
-#df = df.astype({"TIME": "datetime", "CURRENT": "float"})
 
 # Using TIMESTAMP as index, read data in the range between "12:16:09 17/05/24" and "14:54:12 17/05/24"
 df = df.loc["12:16:09 17/05/24":"14:54:12 17/05/24"]

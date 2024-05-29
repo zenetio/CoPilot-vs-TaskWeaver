@@ -1,3 +1,4 @@
+Me:
 Create a Python code that includes the steps below, where the script will do the following:
 
 - plot the current vs time
@@ -11,3 +12,10 @@ Create a Python code that includes the steps below, where the script will do the
 - plot the current in y-axis and time in x-axis.
 - using the read data, plot the graphic of current vs time, where the idea is to see how the current vary with the time
 - write X and Y labels, where X = Time and Y = Current
+
+Copilot:
+Here is the Python code that performs the requested operations:
+This script reads the dataset.csv file line by line, checks if the timestamp is within the specified range, 
+and if so, it adds the time and current data to their respective lists. It then plots the current vs time and 
+labels the axes. The script accepts two command line arguments for the initial and final data.
+The timestamps in the file and the command line arguments are assumed to be in the format "HH:MM:SS dd/mm/yy".
